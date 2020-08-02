@@ -27,6 +27,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git pull --rebase origin master
           git add .
           git commit -m "xd_1 add a Pic" -a
       - name: 'Push changes'
