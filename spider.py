@@ -4,7 +4,7 @@ import re
 
 
 
-for page in range (30,135):
+for page in range (84,135):
     print('-------------------正在爬取第{}页数据------------------'.format(page))
     # proxies = {'http': '60.190.23.50:8080'
     #            }
