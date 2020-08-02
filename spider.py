@@ -4,7 +4,7 @@ import re
 
 
 
-for page in range (84,135):
+for page in range (126,135):
     print('-------------------正在爬取第{}页数据------------------'.format(page))
     # proxies = {'http': '60.190.23.50:8080'
     #            }
@@ -40,7 +40,7 @@ for page in range (84,135):
     #
         img_data=requests.get(url=imgurl,headers=headers).content
         no_title_data = title.replace('/', '').replace('\\', '').replace('>', '')
-        print(no_title_data)
+        #print(no_title_data)
 
         with open('pic/'+title_all,mode='wb')as f:
                 f.write(img_data)
