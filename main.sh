@@ -1,3 +1,3 @@
 #!/bin/bash
 set -eux
-python ./moe.py
+python ./spider.py
