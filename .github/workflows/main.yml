@@ -27,6 +27,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          echo "1" >> README.md
           git add .
           git commit -m "xd add a Pic" -a
       - name: 'Push changes'
