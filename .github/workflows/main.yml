@@ -27,9 +27,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          echo "1" >> README.md
           git add .
           git commit -m "xd add a Pic" -a
+          git reset --soft HEAD^
       - name: 'Push changes'
         uses: ad-m/github-push-action@master
         with:
