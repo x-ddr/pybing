@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: 'test'
+          ref: ''
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
@@ -35,7 +35,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.TOKEN }}
-          branch: 'test'
+         # branch: ''
       - name: 'Create a Release'
         uses: elgohr/Github-Release-Action@master
         env:
